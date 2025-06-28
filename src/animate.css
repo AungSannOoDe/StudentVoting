@@ -405,3 +405,11 @@
           animation: animate-svg-stroke-8 1s cubic-bezier(0.47, 0, 0.745, 0.715) 1.8399999999999999s both,
                animate-svg-fill-8 2s cubic-bezier(0.47, 0, 0.745, 0.715) 4.5s both;
 }
+@keyframes  moveline{
+  0%{
+    height: 0%;
+  }
+  100%{
+    height: 100%;
+  }
+}

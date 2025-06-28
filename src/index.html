@@ -10,9 +10,46 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./animate.css">
+    <style>
+      @keyframes moveline {
+        0% { height: 0%; }
+        100% { height: 100%; }
+      }
+      @keyframes movedown{
+        0%{
+          opacity: 1;
+          transform: translateY(-30px);
+        }
+        100%{
+          opacity: 1;
+          transform: translateY(30px);
+        }
+      }
+     .move-down{
+      animation: movedown 1s linear forwards;
+     }
+      .animate-moveline::after {
+        animation: moveline 6s linear forwards;
+      }
+      .container:nth-child(1){
+animation-delay: 0;
+      }
+      .container:nth-child(2){
+        animation-delay: 0s;
+      }
+      .container:nth-child(3){
+        animation-delay: 1s;
+      }
+      .container:nth-child(4){
+        animation-delay: 2s;
+      }
+      .container:nth-child(5){
+        animation-delay: 3s;
+      }
+    </style>
     <title>Document</title>
 </head>
-<body class="bg-stone-50">
+<body class="bg-stone-50" style=" font-family: Padauk, sans-serif;">
     <header class="  w-full   bg-[url('../assets/images/Computer_University,_Hpa-an.jpg')] bg-cover  min-h-svh    ">
          <nav class=" w-full    h-18  ">
             <div class="max-w-7xl text-xl  text-stone-500 mx-auto items-center py-5 font-bold flex justify-between px-6">
@@ -24,10 +61,10 @@
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="">History</a>
                 </li>
                 <li>
-                    <a href="">Contact Us</a>
+                    <a href="./gallery.html">Gallery</a>
                 </li>
                 <li>
                     <a href="">FAQ</a>
@@ -108,15 +145,67 @@
     </section>
     <section class="max-w-7xl  mx-auto  mb-10 ">
         <div class="flex justify-center space-x-20 "> 
-          
-          <div class="w-50 text-wrap">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, ab?</h2>
+          <div class="w-50 text-wrap self-center">
+            <h2 class="text-3xl font-bold leading-14"> <span class="underline"> 27.6.2025 </span> မဲထည့်ကြဖို့မမေ့နဲ့နော်😉</h2>
           </div>
           <div class="">
-            <img src="../assets/images/Computer_University,_Hpa-an.jpg" width="300px" alt="">
+            <img src="../assets/images/woman-8182795_1280.jpg" width="500px" class="object-cover" alt="">
           </div>    
         </div>
     </section>
+
+   <section class="mt-6">
+    <h1 class="text-center font-bold  underline  text-stone-600  text-4xl  mb-6">Events</h1>
+    <section class=" relative   max-w-7xl mx-auto  after:content-['']  after:absolute after:w-[6px] after:h-[100%] after:top-0 after:bg-black  after:left-[50%] after:-ml-3px after:z-1 animate-moveline">
+      <div class="px-[50px] py-[10px] relative w-[50%] move-down container    left-2 ">
+        <div class="w-[50px] h-[50px] bg-stone-600 rounded-full absolute  z-10 -right-[20px] top-[32px] "></div>
+        <div class="px-[30px] py-[20px] bg-blue-500 relative rounded-md ">
+          <h2>Aphalent Box.</h2>
+          <small>2018-2019</small>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero alias corrupti dolorum quam nam amet non doloremque reiciendis ea.</p>
+          <span class="left-container-arrow "></span>
+        </div>
+      </div>
+      <div class="px-[50px] py-[10px] relative w-[50%] move-down  container left-[50%]">
+        <div class="w-[50px] h-[50px] move-down bg-stone-600 rounded-full absolute  z-10 -left-[20px] top-[32px]"></div>
+        <div class="px-[30px] py-[20px]  bg-blue-500 relative rounded-md ">
+          <h2>Aphalent Box.</h2>
+          <small>2018-2019</small>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero alias corrupti dolorum quam nam amet non doloremque reiciendis ea.</p>
+          <span class="right-container-arrow "></span>
+        </div>
+      </div>
+      <div class="px-[50px] py-[10px] relative w-[50%] move-down container left-2  ">
+        <div class="w-[50px] h-[50px]  move-down bg-stone-600 rounded-full absolute  z-10 -right-[20px] top-[32px]  "></div>
+        <div class="px-[30px] py-[20px] bg-blue-500 relative rounded-md ">
+          <h2>Aphalent Box.</h2>
+          <small>2018-2019</small>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero alias corrupti dolorum quam nam amet non doloremque reiciendis ea.</p>
+          <span class="left-container-arrow "></span>
+        </div>
+      </div>
+      <div class="px-[50px] py-[10px] relative w-[50%]  left-[50%] container move-down ">
+        <div class="w-[50px] h-[50px]  bg-stone-600 rounded-full absolute  z-10 -left-[20px] top-[32px]"></div>
+        <div class="px-[30px] py-[20px] bg-blue-500 relative rounded-md ">
+          <h2>Aphalent Box.</h2>
+          <small>2018-2019</small>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero alias corrupti dolorum quam nam amet non doloremque reiciendis ea.</p>
+          <span class="right-container-arrow "></span>
+        </div>
+      </div>
+      <div class="px-[50px] py-[10px] relative w-[50%]  left-2  container  move-down ">
+        <div class="w-[50px] h-[50px]  bg-stone-600 rounded-full absolute  z-10 -right-[20px] top-[32px]"></div>
+        <div class="px-[30px] py-[20px] bg-blue-500 relative rounded-md ">
+          <h2>Aphalent Box.</h2>
+          <small>2018-2019</small>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus vero alias corrupti dolorum quam nam amet non doloremque reiciendis ea.</p>
+          <span class="left-container-arrow "></span>
+        </div>
+      </div>
+    </section>
+   </section>
+
+    
     <section class="mt-32 flex flex-col  -space-y-30 " id="hello ">
          <h1   class="text-5xl  text-center underline text-stone-600 opacity-65 font-bold ">Selection for Boys</h1>
         <section class=" slider-container w-full   flex items-center justify-center p-4">

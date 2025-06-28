@@ -1,3 +1,4 @@
+@import url('./font.css');
 @import "tailwindcss";
 @layer utilities {
     .slider-img,.track-img {
@@ -6,6 +7,12 @@
     .slider-img h1,.track-img h1 {
       @apply font-bold text-4xl text-white uppercase absolute top-1/2 -left-10 origin-left;
       transform: rotate(270deg);
+    }
+    .left-container-arrow {
+      @apply  h-0 w-0  absolute top-[28px] border-t-[15px] border-l-[15px] -right-[15px] border-l-blue-500  border-solid border-b-transparent  border-t-transparent z-1;
+    }
+    .right-container-arrow {
+      @apply  h-0 w-0  absolute top-[28px] border-t-[15px] border-r-[15px] -left-[15px] border-r-blue-500  border-solid border-b-transparent  border-t-transparent z-1;
     }
     .details {
       @apply absolute bottom-10 left-10;
